@@ -15,6 +15,7 @@ function Popup({
 
   const handleAdd = (e) => {
     e.preventDefault();
+    if (todo == "" || category == "") return;
     setPopupVisible(false);
     setTodoList([...todoList, { taskName: todo, category: category }]);
   };
@@ -41,6 +42,7 @@ function Popup({
               <input
                 type="text"
                 value={todo}
+                placeholder={todoList[index]?.taskName}
                 onChange={(e) => setTodo(e.target.value)}
               />
             </div>
@@ -49,6 +51,7 @@ function Popup({
               <input
                 type="text"
                 value={category}
+                placeholder={todoList[index]?.category}
                 onChange={(e) => setCategory(e.target.value)}
               />
             </div>
