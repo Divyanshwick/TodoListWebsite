@@ -1,0 +1,45 @@
+.task {
+	display: flex;
+	padding-bottom: 12px;
+	padding-right: 32px;
+	
+}
+
+.task__radioBtn {
+	padding-right: 32px;
+}
+.task__info {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+
+.task__icon {
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 40px;
+	width: 40px;
+}
+.task__icon:hover {
+	background-color: rgba(0, 0, 0, 0.08);
+	border-radius: 50%;
+}
+
+.task {
+	margin: 20px 32px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.task span {
+	font-size: 1rem;
+	line-height: 1.5rem;
+	color: rgba(0, 0, 0, 0.87);
+}
+
+.task p {
+	font-size: 0.875rem;
+	line-height: 1.46429em;
+	color: rgba(0, 0, 0, 0.54);
+}

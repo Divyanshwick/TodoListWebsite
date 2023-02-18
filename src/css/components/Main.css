@@ -1,0 +1,62 @@
+.main {
+	flex: 0.6;
+	flex-grow: 1;
+	overflow-y: auto;
+}
+.main__header {
+	padding-left: 24px;
+	background-color: #42a5f5;
+	color: #fffffe;
+	min-height: 73px;
+	display: flex;
+	align-items: center;
+	box-shadow: 0px 3px 5px rgb(0 0 0 / 14%);
+}
+
+.header__hamburgerMenu {
+	margin-right: 25px;
+	cursor: pointer;
+	padding: 10px;
+}
+.header__hamburgerMenu:hover {
+	background-color: #2085d8;
+	border-radius: 50%;
+}
+
+.header__heading {
+	font-size: 1.25rem;
+	font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+	font-weight: 500;
+	line-height: 1.6;
+	letter-spacing: 0.0075em;
+}
+
+.header__timestamp {
+	font-size: 0.8rem;
+}
+
+.main__main-component {
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+	margin: 0 32px;
+}
+
+.main__main-subComponent {
+	display: flex;
+	flex-grow: 1;
+	padding: 11px 0;
+	color: #42a5f5;
+}
+
+.main__main-subComponent:hover {
+	background-color: #e6e6e6;
+	cursor: pointer;
+}
+
+@media only screen and (min-width: 600px) {
+	.header__hamburgerMenu {
+		display: none;
+	}
+}
